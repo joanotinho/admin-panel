@@ -5,8 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style/app.css">
+
+    <script type="module" src="main.js"></script>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="container-column table-column">
+                <div class="table">
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th>Sites</th>
+                                <th>Views</th>
+                                <th>Clicks</th>
+                                <th>Average</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Google</td>
+                                <td>9518</td>
+                                <td>6369</td>
+                                <td>01:32:50</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td>7326</td>
+                                <td>10437</td>
+                                <td>00:51:22</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Amazon</td>
+                                <td>4162</td>
+                                <td>5327</td>
+                                <td>00:24:34</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>3654</td>
+                                <td>2961</td>
+                                <td>00:12:10</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CodePen</td>
+                                <td>2002</td>
+                                <td>4135</td>
+                                <td>00:46:19</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GitHub</td>
+                                <td>4623</td>
+                                <td>3486</td>
+                                <td>00:31:52</td>
+                                <td>
+                                    <div class="edit-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="delete-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="container-column form-column">
+                <div class="form">
+                    <form action="">
+                        <div class="desktop-two-columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label for="">Nombre:</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label for="apellidos">Apellidos:</label>
+                                    <input type="text" name="apellidos" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desktop-two-columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label for="apellidos">Email:</label>
+                                    <input type="text" name="apellidos" id="">
+                                </div>
+                            </div>
+                            <div class="column">
+
+                                <div class="field">
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="text" name="telefono" id="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desktop-single-column">
+                            <div class="column">
+                                <div class="textarea">
+                                    <label for="">Déjanos un comentario:</label>
+                                    <textarea name="" id="" ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desktop-single-column">
+                            <div class="submit-button">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
