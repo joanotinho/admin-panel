@@ -404,31 +404,35 @@ body {
   line-height: 1.42em;
   background-color: #283593;
 }
-body .container {
+body main {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 90%;
+  width: 98%;
 }
-body .container .container-column {
-  width: 100%;
+body main .table-column {
+  text-align: center;
+  margin: 0 20%;
+  width: 60%;
+  margin-top: 1rem;
+  transition: all 0.5s;
 }
-body .container .container-column .table table {
+body main .table-column table {
   border-radius: 0.4rem;
   overflow: hidden;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
-body .container .container-column .table table tr:nth-child(odd) {
+body main .table-column table tr:nth-child(odd) {
   background-color: #f7f7f7;
 }
-body .container .container-column .table table tr:nth-child(even) {
+body main .table-column table tr:nth-child(even) {
   background-color: #dadbdb;
 }
-body .container .container-column .table table tr td, body .container .container-column .table table tr th {
+body main .table-column table tr td, body main .table-column table tr th {
   padding: 2% 0;
 }
-body .container .container-column .table table tr td {
+body main .table-column table tr td {
   box-shadow: 0 2px 2px -2px #0E1119;
   color: #8d8b91;
   font-weight: normal;
@@ -437,45 +441,53 @@ body .container .container-column .table table tr td {
   -webkit-box-shadow: 0 2px 2px -2px #0E1119;
   -moz-box-shadow: 0 2px 2px -2px #0E1119;
 }
-body .container .container-column .table table tr td:hover {
+body main .table-column table tr td:hover {
   background-color: #5f5fc4;
   color: #fff;
 }
-body .container .container-column .table table tr th {
+body main .table-column table tr th {
   background-color: #112175;
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;
 }
-body .container .container-column .table table tr .edit-button, body .container .container-column .table table tr .delete-button {
+body main .table-column table tr .edit-button, body main .table-column table tr .delete-button {
   cursor: pointer;
   margin: auto;
   width: max-content;
 }
-body .container .container-column .table table tr .edit-button svg, body .container .container-column .table table tr .delete-button svg {
+body main .table-column table tr .edit-button svg, body main .table-column table tr .delete-button svg {
   height: 1.4rem;
   width: 1.4rem;
 }
-body .container .container-column .form-column {
-  display: block;
-}
-body .container .container-column .form-column .form {
-  background-color: #1e2f83;
-  border-radius: 0.4rem;
-  margin-top: 0.6rem;
-  margin-left: 150%;
-  padding: 0.5rem 10%;
-  width: 80%;
+body main .table-column.active {
+  margin-left: 0;
+  width: 50%;
   transition: all 0.5s;
 }
-body .container .container-column .form-column .form form {
+body main .form-column {
+  position: absolute;
+  left: 150rem;
+  top: 1rem;
+  transition: left 1s;
+  width: 50%;
+}
+body main .form-column .form {
+  background-color: #1e2f83;
+  border-radius: 0.4rem;
+  left: 150;
+  margin-top: 0.6rem;
+  padding: 0.5rem 10%;
+  width: 70%;
+}
+body main .form-column .form form {
   margin: 0.1rem 0;
   width: 100%;
 }
-body .container .container-column .form-column .form form .field {
+body main .form-column .form form .field {
   margin-top: 0.5rem;
 }
-body .container .container-column .form-column .form form .field input {
+body main .form-column .form form .field input {
   background-color: #5f5fc4;
   border: none;
   border-radius: 0.2rem;
@@ -484,24 +496,24 @@ body .container .container-column .form-column .form form .field input {
   padding: 0.2rem 0.5rem;
   width: 95%;
 }
-body .container .container-column .form-column .form form .field input:hover {
+body main .form-column .form form .field input:hover {
   background-color: #7171ce;
 }
-body .container .container-column .form-column .form form .field label {
+body main .form-column .form form .field label {
   color: #fff;
   font-weight: bold;
   width: 100%;
 }
-body .container .container-column .form-column .form form .textarea {
+body main .form-column .form form .textarea {
   text-align: center;
   margin-top: 0.7rem;
 }
-body .container .container-column .form-column .form form .textarea label {
+body main .form-column .form form .textarea label {
   color: #fff;
   font-weight: bold;
   width: 100%;
 }
-body .container .container-column .form-column .form form .textarea textarea {
+body main .form-column .form form .textarea textarea {
   background-color: #5f5fc4;
   border: none;
   border-radius: 0.2rem;
@@ -512,14 +524,14 @@ body .container .container-column .form-column .form form .textarea textarea {
   resize: none;
   width: 80%;
 }
-body .container .container-column .form-column .form form .textarea textarea:hover {
+body main .form-column .form form .textarea textarea:hover {
   background-color: #7171ce;
 }
-body .container .container-column .form-column .form form .submit-button {
+body main .form-column .form form .submit-button {
   text-align: right;
   margin-top: 0.5rem;
 }
-body .container .container-column .form-column .form form .submit-button button {
+body main .form-column .form form .submit-button button {
   background-color: #5f5fc4;
   border-radius: 0.2rem;
   border: none;
@@ -529,15 +541,10 @@ body .container .container-column .form-column .form form .submit-button button 
   padding: 0.3rem 0.7rem;
   width: max-content;
 }
-body .container.active .container-column .form {
-  margin-left: 0;
-}
-body .container.active .form-column {
-  display: none;
-}
-body .container.active .form {
-  margin: 0;
-  transition: all 0.5s;
+body main .form-column.active {
+  left: 55%;
+  transition: left 0.3s ease;
+  width: 48%;
 }
 
 /*# sourceMappingURL=app.css.map */
